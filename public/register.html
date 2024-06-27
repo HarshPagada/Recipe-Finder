@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="register.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="floating-ingredients">
+        <img src="https://img.icons8.com/color/48/000000/tomato.png" alt="Tomato" class="ingredient"
+            style="top: 10%; animation-duration: 22s;">
+        <img src="https://img.icons8.com/color/48/000000/broccoli.png" alt="Broccoli" class="ingredient"
+            style="top: 20%; animation-duration: 24s;">
+        <img src="https://img.icons8.com/color/48/000000/cabbage.png" alt="Cabbage" class="ingredient"
+            style="top: 30%; animation-duration: 26s;">
+        <img src="https://img.icons8.com/color/48/000000/carrot.png" alt="Carrot" class="ingredient"
+            style="top: 40%; animation-duration: 28s;">
+        <img src="https://img.icons8.com/color/48/000000/corn.png" alt="Corn" class="ingredient"
+            style="top: 50%; animation-duration: 30s;">
+        <img src="https://img.icons8.com/color/48/000000/garlic.png" alt="Garlic" class="ingredient"
+            style="top: 60%; animation-duration: 32s;">
+        <img src="https://img.icons8.com/color/48/000000/onion.png" alt="Onion" class="ingredient"
+            style="top: 70%; animation-duration: 34s;">
+        <img src="https://img.icons8.com/color/48/000000/peas.png" alt="Peas" class="ingredient"
+            style="top: 80%; animation-duration: 36s;">
+        <img src="https://img.icons8.com/color/48/000000/potato.png" alt="Potato" class="ingredient"
+            style="top: 90%; animation-duration: 38s;">
+        <img src="https://img.icons8.com/color/48/000000/pumpkin.png" alt="Pumpkin" class="ingredient"
+            style="top: 20%; animation-duration: 40s;">
+        <img src="https://img.icons8.com/color/48/000000/radish.png" alt="Radish" class="ingredient"
+            style="top: 30%; animation-duration: 42s;">
+        <img src="https://img.icons8.com/color/48/000000/eggplant.png" alt="Eggplant" class="ingredient"
+            style="top: 40%; animation-duration: 44s;">
+        <!-- <img src="https://img.icons8.com/color/48/000000/lemon.png" alt="Lemon" class="ingredient"
+            style="top: 45%; animation-duration: 46s;"> -->
+        <img src="https://img.icons8.com/color/48/000000/mushroom.png" alt="Mushroom" class="ingredient"
+            style="top: 50%; animation-duration: 48s;">
+        <img src="https://img.icons8.com/color/48/000000/cucumber.png" alt="Cucumber" class="ingredient"
+            style="top: 60%; animation-duration: 50s;">
+    </div>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registration-form" method="post" action="/register">
+            <div class="form-group">
+                <label for="username">Username (Email)</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="save-button">Save</button>
+        </form>
+        <h4>Already a User? 👉 <a href="./login.html">Login</a></h4>
+    </div>
+</body>
+
+</html>
