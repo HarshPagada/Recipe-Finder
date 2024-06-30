@@ -1,6 +1,6 @@
 const searchFormEl = document.getElementById("search-form");
 const searchBarEl = document.getElementById("search-bar");
-const apiKey = "a1674bf3bbc9460caf143266107318bb";
+const apiKey = "543f9036e1164201a6e40387f1d624a9";
 
 window.onload = async () => {
   const randomRecipes = await searchRandom();
