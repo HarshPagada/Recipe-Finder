@@ -8,7 +8,10 @@ const isAuthenticated = require('./loginAuth');
 const Recipe = require('./models/recipe');
 
 const app = express();
+require('dotenv').config();
+
 const staticPath = path.join(__dirname, '../public');
+let url = process.env.URL_key
 
 // Middleware
 app.use(express.static(staticPath));
@@ -21,7 +24,7 @@ app.use(session({
   }));
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://harsh:HARSHp9724720441@cluster0.xoyozdn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
